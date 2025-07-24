@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Routes
 app.use('/', (req,res) =>{
-    res.send("hello")
+    res.send("hello backend gateway")
 });
 
 app.use('/api/auth', authRoutes);
