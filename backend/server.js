@@ -3,8 +3,6 @@ import express from 'express';
 // import dotenv from 'dotenv';
 // import mongoose from 'mongoose';
 import cors from 'cors';
-// import authRoutes from './routes/authRoutes.js';
-// import connectDB from './config/db.js';
 import connectDB from './config/databaseconnect.js';
 import authRoutes from './routes/authRoutes.js';
 import venderrouter from './routes/vendorroutes.js';
@@ -25,9 +23,9 @@ app.use(express.json());
 
 
 // Routes
-// app.use('/', (req,res) =>{
-//     res.send("hello")
-// });
+app.use('/', (req,res) =>{
+    res.send("hello")
+});
 
 app.use('/api/auth', authRoutes);
 
